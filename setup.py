@@ -1,14 +1,14 @@
 import setuptools
 
 setuptools.setup(
-    name="reinforcement_learning_keras",
-    version="0.1",
+    name="rl_lab",
+    version="0.1.0",
     author="Fred",
     author_email="fredbakai@gmail.com",
     description="",
     long_description='',
     long_description_content_type="text/markdown",
-    url="https://github.com/garethjns/reinforcement-learning-keras",
+    url="https://github.com/FredBakaj/rl_lab",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
