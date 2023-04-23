@@ -8,14 +8,14 @@ import numpy as np
 import tensorflow as tf
 from tensorflow import keras
 
-from agents.agent_base import AgentBase
-from agents.components.helpers.env_builder import EnvBuilder
-from agents.components.helpers.virtual_gpu import VirtualGPU
-from agents.components.history.training_history import TrainingHistory
-from agents.components.replay_buffers.continuous_buffer import ContinuousBuffer
-from agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
-from enviroments.config_base import ConfigBase
-from enviroments.model_base import ModelBase
+from rl_lab.agents.agent_base import AgentBase
+from rl_lab.agents.components.helpers.env_builder import EnvBuilder
+from rl_lab.agents.components.helpers.virtual_gpu import VirtualGPU
+from rl_lab.agents.components.history.training_history import TrainingHistory
+from rl_lab.agents.components.replay_buffers.continuous_buffer import ContinuousBuffer
+from rl_lab.agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
+from rl_lab.enviroments.config_base import ConfigBase
+from rl_lab.enviroments.model_base import ModelBase
 
 tf.compat.v1.disable_eager_execution()
 
@@ -296,9 +296,9 @@ class DeepQAgent(AgentBase):
 
 
 if __name__ == "__main__":
-    from enviroments.atari.pong.pong_config import PongConfig
-    from enviroments.cart_pole import CartPoleConfig
-    from enviroments import MountainCarConfig
+    from rl_lab.enviroments.atari.pong.pong_config import PongConfig
+    from rl_lab.enviroments.cart_pole import CartPoleConfig
+    from rl_lab.enviroments import MountainCarConfig
 
     # DQNs
     agent_cart_pole = DeepQAgent.example(CartPoleConfig(agent_type='dqn', plot_during_training=True), render=False)

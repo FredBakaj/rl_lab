@@ -1,10 +1,10 @@
 import os
 from typing import Dict, Any
 
-from agents.components.replay_buffers.continuous_buffer import ContinuousBuffer
-from agents.models.conv_nn import ConvNN
-from agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
-from enviroments.atari.atari_default_config import AtariDefaultConfig
+from rl_lab.agents.components.replay_buffers.continuous_buffer import ContinuousBuffer
+from rl_lab.agents.models.conv_nn import ConvNN
+from rl_lab.agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
+from rl_lab.enviroments.atari.atari_default_config import AtariDefaultConfig
 
 
 class PongConfig(AtariDefaultConfig):

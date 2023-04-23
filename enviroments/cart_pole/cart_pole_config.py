@@ -2,14 +2,14 @@ import os
 from functools import partial
 from typing import Any, Dict
 
-from agents.components.replay_buffers.continuous_buffer import ContinuousBuffer
-from agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
-from enviroments.cart_pole.environment_processing.clipepr_wrapper import ClipperWrapper
-from enviroments.cart_pole.environment_processing.rbf_wrapepr import RBFSWrapper
-from enviroments.cart_pole.environment_processing.squeeze_wrapper import SqueezeWrapper
-from enviroments.cart_pole.models.small_dueling_nn import SmallDuelingNN
-from enviroments.cart_pole.models.small_nn import SmallNN
-from enviroments.config_base import ConfigBase
+from rl_lab.agents.components.replay_buffers.continuous_buffer import ContinuousBuffer
+from rl_lab.agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
+from rl_lab.enviroments.cart_pole.environment_processing.clipepr_wrapper import ClipperWrapper
+from rl_lab.enviroments.cart_pole.environment_processing.rbf_wrapepr import RBFSWrapper
+from rl_lab.enviroments.cart_pole.environment_processing.squeeze_wrapper import SqueezeWrapper
+from rl_lab.enviroments.cart_pole.models.small_dueling_nn import SmallDuelingNN
+from rl_lab.enviroments.cart_pole.models.small_nn import SmallNN
+from rl_lab.enviroments.config_base import ConfigBase
 
 
 class CartPoleConfig(ConfigBase):

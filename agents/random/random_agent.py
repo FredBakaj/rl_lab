@@ -1,11 +1,11 @@
 from dataclasses import dataclass
 from typing import Any, Dict, Tuple, Iterable, Callable
 
-from agents.agent_base import AgentBase
-from agents.components.helpers.env_builder import EnvBuilder
-from agents.components.history.training_history import TrainingHistory
-from agents.random.random_model import RandomModel
-from enviroments.config_base import ConfigBase
+from rl_lab.agents.agent_base import AgentBase
+from rl_lab.agents.components.helpers.env_builder import EnvBuilder
+from rl_lab.agents.components.history.training_history import TrainingHistory
+from rl_lab.agents.random.random_model import RandomModel
+from rl_lab.enviroments.config_base import ConfigBase
 
 
 @dataclass
@@ -81,9 +81,9 @@ class RandomAgent(AgentBase):
 
 
 if __name__ == "__main__":
-    from enviroments import PongConfig
-    from enviroments.cart_pole import CartPoleConfig
-    from enviroments import MountainCarConfig
+    from rl_lab.enviroments import PongConfig
+    from rl_lab.enviroments.cart_pole import CartPoleConfig
+    from rl_lab.enviroments import MountainCarConfig
 
     agent_mountain_car = RandomAgent.example(
         MountainCarConfig(agent_type='random', plot_during_training=True), max_episode_steps=1500, render=False)

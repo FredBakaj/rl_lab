@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 import numpy as np
 
-from agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
+from rl_lab.agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
 
 
 @dataclass

@@ -2,16 +2,16 @@ import os
 from functools import partial
 from typing import Dict, Any
 
-from agents.components.replay_buffers.continuous_buffer import ContinuousBuffer
-from agents.models.conv_nn import ConvNN
-from agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
-from enviroments.atari.atari_default_config import AtariDefaultConfig
-from enviroments.atari.environment_processing.fire_start_wrapper import FireStartWrapper
-from enviroments.atari.environment_processing.frame_buffer_wrapper import \
+from rl_lab.agents.components.replay_buffers.continuous_buffer import ContinuousBuffer
+from rl_lab.agents.models.conv_nn import ConvNN
+from rl_lab.agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
+from rl_lab.enviroments.atari.atari_default_config import AtariDefaultConfig
+from rl_lab.enviroments.atari.environment_processing.fire_start_wrapper import FireStartWrapper
+from rl_lab.enviroments.atari.environment_processing.frame_buffer_wrapper import \
     FrameBufferWrapper
-from enviroments.atari.environment_processing.image_process_wrapper import \
+from rl_lab.enviroments.atari.environment_processing.image_process_wrapper import \
     ImageProcessWrapper
-from enviroments.atari.environment_processing.max_and_skip_wrapper import MaxAndSkipWrapper
+from rl_lab.enviroments.atari.environment_processing.max_and_skip_wrapper import MaxAndSkipWrapper
 
 
 class SpaceInvadersConfig(AtariDefaultConfig):

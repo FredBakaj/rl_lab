@@ -1,11 +1,11 @@
 import os
 from typing import Any, Dict
 
-from agents.components.replay_buffers.continuous_buffer import ContinuousBuffer
-from agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
-from enviroments.cart_pole.models.small_dueling_nn import SmallDuelingNN
-from enviroments.config_base import ConfigBase
-from enviroments.mountain_car.models.small_nn import SmallNN
+from rl_lab.agents.components.replay_buffers.continuous_buffer import ContinuousBuffer
+from rl_lab.agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
+from rl_lab.enviroments.cart_pole.models.small_dueling_nn import SmallDuelingNN
+from rl_lab.enviroments.config_base import ConfigBase
+from rl_lab.enviroments.mountain_car.models.small_nn import SmallNN
 
 
 class MountainCarConfig(ConfigBase):

@@ -4,7 +4,7 @@ from typing import Tuple, Any, Iterable, List
 
 import numpy as np
 
-from agents.components.replay_buffers.replay_buffer_base import ReplayBufferBase
+from rl_lab.agents.components.replay_buffers.replay_buffer_base import ReplayBufferBase
 
 
 @dataclass

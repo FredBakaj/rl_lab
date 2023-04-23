@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
-from agents.components.history.episode_report import EpisodeReport
+from rl_lab.agents.components.history.episode_report import EpisodeReport
 
 
 @dataclass

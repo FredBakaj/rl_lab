@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-from enviroments.preprocessing.clipper import Clipper
+from rl_lab.enviroments.preprocessing.clipper import Clipper
 
 
 class ClipperWrapper(gym.ObservationWrapper):

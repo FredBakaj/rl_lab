@@ -11,8 +11,8 @@ import seaborn as sns
 from joblib import Parallel, delayed
 from joblib.externals.loky.process_executor import BrokenProcessPool
 
-from agents.agent_base import AgentBase
-from enviroments.config_base import ConfigBase
+from rl_lab.agents.agent_base import AgentBase
+from rl_lab.enviroments.config_base import ConfigBase
 
 
 @dataclass

@@ -2,7 +2,7 @@ from typing import Tuple
 
 from tensorflow import keras
 
-from enviroments.model_base import ModelBase
+from rl_lab.enviroments.model_base import ModelBase
 
 
 

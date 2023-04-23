@@ -2,17 +2,17 @@ import os
 from functools import partial
 from typing import Any, Dict
 
-from agents.components.replay_buffers.continuous_buffer import ContinuousBuffer
-from agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
-from enviroments.atari.environment_processing.fire_start_wrapper import FireStartWrapper
-from enviroments.atari.environment_processing.frame_buffer_wrapper import \
+from rl_lab.agents.components.replay_buffers.continuous_buffer import ContinuousBuffer
+from rl_lab.agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
+from rl_lab.enviroments.atari.environment_processing.fire_start_wrapper import FireStartWrapper
+from rl_lab.enviroments.atari.environment_processing.frame_buffer_wrapper import \
     FrameBufferWrapper
-from enviroments.atari.environment_processing.image_process_wrapper import \
+from rl_lab.enviroments.atari.environment_processing.image_process_wrapper import \
     ImageProcessWrapper
-from enviroments.atari.environment_processing.max_and_skip_wrapper import MaxAndSkipWrapper
-from agents.models.conv_nn import ConvNN
-from agents.models.dueling_conv_nn import DuelingConvNN
-from enviroments.config_base import ConfigBase
+from rl_lab.enviroments.atari.environment_processing.max_and_skip_wrapper import MaxAndSkipWrapper
+from rl_lab.agents.models.conv_nn import ConvNN
+from rl_lab.agents.models.dueling_conv_nn import DuelingConvNN
+from rl_lab.enviroments.config_base import ConfigBase
 
 
 class AtariDefaultConfig(ConfigBase):

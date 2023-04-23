@@ -8,13 +8,13 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import backend as K
 
-from agents.agent_base import AgentBase
-from agents.components.helpers.env_builder import EnvBuilder
-from agents.components.helpers.virtual_gpu import VirtualGPU
-from agents.components.history.training_history import TrainingHistory
-from agents.policy_gradient.loss import reinforce_loss
-from enviroments.config_base import ConfigBase
-from enviroments.model_base import ModelBase
+from rl_lab.agents.agent_base import AgentBase
+from rl_lab.agents.components.helpers.env_builder import EnvBuilder
+from rl_lab.agents.components.helpers.virtual_gpu import VirtualGPU
+from rl_lab.agents.components.history.training_history import TrainingHistory
+from rl_lab.agents.policy_gradient.loss import reinforce_loss
+from rl_lab.enviroments.config_base import ConfigBase
+from rl_lab.enviroments.model_base import ModelBase
 
 tf.compat.v1.disable_eager_execution()
 
@@ -254,7 +254,7 @@ class ReinforceAgent(AgentBase):
 
 
 if __name__ == "__main__":
-    from enviroments.cart_pole import CartPoleConfig
+    from rl_lab.enviroments.cart_pole import CartPoleConfig
 
     agent_cart_pole = ReinforceAgent.example(CartPoleConfig(agent_type='reinforce', plot_during_training=True),
                                              render=False)

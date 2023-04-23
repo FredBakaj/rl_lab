@@ -8,10 +8,10 @@ import gym
 import joblib
 import numpy as np
 
-from agents.components.helpers.env_builder import EnvBuilder
-from agents.components.helpers.tqdm_handler import TQDMHandler
-from agents.components.history.episode_report import EpisodeReport
-from agents.components.history.training_history import TrainingHistory
+from rl_lab.agents.components.helpers.env_builder import EnvBuilder
+from rl_lab.agents.components.helpers.tqdm_handler import TQDMHandler
+from rl_lab.agents.components.history.episode_report import EpisodeReport
+from rl_lab.agents.components.history.training_history import TrainingHistory
 
 
 class AgentBase(abc.ABC):

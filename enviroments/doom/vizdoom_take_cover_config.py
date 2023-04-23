@@ -1,4 +1,4 @@
-from enviroments.doom.doom_default_config import DoomDefaultConfig
+from rl_lab.enviroments.doom.doom_default_config import DoomDefaultConfig
 
 
 class VizDoomTakeCoverConfig(DoomDefaultConfig):

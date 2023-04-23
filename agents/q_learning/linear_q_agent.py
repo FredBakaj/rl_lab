@@ -4,11 +4,11 @@ from typing import Any, Dict, Tuple, Union, Callable, Iterable
 import numpy as np
 from sklearn.linear_model import SGDRegressor
 
-from agents.agent_base import AgentBase
-from agents.components.helpers.env_builder import EnvBuilder
-from agents.components.history.training_history import TrainingHistory
-from agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
-from enviroments.config_base import ConfigBase
+from rl_lab.agents.agent_base import AgentBase
+from rl_lab.agents.components.helpers.env_builder import EnvBuilder
+from rl_lab.agents.components.history.training_history import TrainingHistory
+from rl_lab.agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
+from rl_lab.enviroments.config_base import ConfigBase
 
 
 @dataclass
@@ -182,8 +182,8 @@ class LinearQAgent(AgentBase):
 
 
 if __name__ == "__main__":
-    from enviroments.cart_pole import CartPoleConfig
-    from enviroments import MountainCarConfig
+    from rl_lab.enviroments.cart_pole import CartPoleConfig
+    from rl_lab.enviroments import MountainCarConfig
 
     agent_cart_pole = LinearQAgent.example(CartPoleConfig(agent_type='linear_q', plot_during_training=True))
     agent_mountain_car = LinearQAgent.example(MountainCarConfig(agent_type='linear_q', plot_during_training=True))

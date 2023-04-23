@@ -7,13 +7,13 @@ from typing import Any, Dict, Tuple
 # noinspection PyUnresolvedReferences
 import vizdoomgym
 
-from agents.components.replay_buffers.continuous_buffer import ContinuousBuffer
-from agents.models.conv_nn import ConvNN
-from agents.models.dueling_conv_nn import DuelingConvNN
-from agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
-from enviroments.config_base import ConfigBase
-from enviroments.doom.environment_processing.frame_buffer_wrapper import FrameBufferWrapper
-from enviroments.doom.environment_processing.image_process_wrapper import \
+from rl_lab.agents.components.replay_buffers.continuous_buffer import ContinuousBuffer
+from rl_lab.agents.models.conv_nn import ConvNN
+from rl_lab.agents.models.dueling_conv_nn import DuelingConvNN
+from rl_lab.agents.q_learning.exploration.epsilon_greedy import EpsilonGreedy
+from rl_lab.enviroments.config_base import ConfigBase
+from rl_lab.enviroments.doom.environment_processing.frame_buffer_wrapper import FrameBufferWrapper
+from rl_lab.enviroments.doom.environment_processing.image_process_wrapper import \
     ImageProcessWrapper
 
 

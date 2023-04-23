@@ -3,7 +3,7 @@ from typing import List, Dict, Any
 
 import gym
 
-from agents.components.history.training_history import TrainingHistory
+from rl_lab.agents.components.history.training_history import TrainingHistory
 
 
 class ConfigBase(abc.ABC):
